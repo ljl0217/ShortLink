@@ -1,0 +1,13 @@
+package com.nageoffer.shortlink.project.config;
+
+import lombok.Data;
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.stereotype.Component;
+
+@Data
+@Component
+@ConfigurationProperties(prefix = "gaode")
+public class GaodeProperties {
+    private String key;
+    private String url;
+}
